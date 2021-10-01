@@ -1,6 +1,20 @@
 # BDA-Project
 Project for Big Data Analytics A.A. 2021/22
 
+## The Movies Dataset
+*Link: https://www.kaggle.com/rounakbanik/the-movies-dataset?select=movies_metadata.csv*
+
+These files contain metadata for all 45,000 movies listed in the Full MovieLens Dataset. The dataset consists of movies released on or before July 2017. 
+Data points include cast, crew, plot keywords, budget, revenue, posters, release dates, languages, production companies, countries, TMDB vote counts and vote averages.
+ 
+### Predictive variables
+Each instance in the dataset has several predictor variables (quantitative or categorical), which indicate characteristics of the movie like cast, crew, plot keywords, budget, revenue, posters, release dates, adult, etc.
+ 
+### Predictive task
+1. Option 1: To create a model to predict the average vote of the movie i.e., the vote_average variable. 
+2. Option 2: To create a model to predict the revenue of the movie, i.e., the revenue variable. 
+3. Option 3: To create a model to predict the popularity of the movie, i.e., the popularity variable. 
+
 ## Module 1: Big Data Analytics and Social Mining
 In this module, analytical methods and processes are presented through exemplary cases studies in challenging domains, organized according to the following topics:
 * The Big Data Scenario and the new questions to be answered
