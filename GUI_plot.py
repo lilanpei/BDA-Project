@@ -195,7 +195,7 @@ class MatplotlibWidget(QMainWindow):
                         self.spinBox_3.setValue(0)
                         cf_idx = 0
 
-                    # Step 1: dice_ml.Data
+                    # Pre-defined Data frame
                     d = dice_ml.Data(dataframe=self.data_cls,
                                      continuous_features=['budget_tmdb', 'N_spoken_languages', 'month_sin', 'month_cos',
                                                           'runtime', 'year'], outcome_name='predict_cls')
