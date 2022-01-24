@@ -1,5 +1,4 @@
 # -*- mode: python ; coding: utf-8 -*-
-from ctypes.util import find_library
 import sys
 import os
 
