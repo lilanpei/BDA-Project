@@ -1,54 +1,68 @@
 # BDA-Project
-Project for Big Data Analytics A.A. 2021/22
+Project for Big Data Analytics A.A. 2021/22 by The Missing Values team
 
 ## The Movies Dataset
 *Link: https://www.kaggle.com/rounakbanik/the-movies-dataset?select=movies_metadata.csv*
 
 These files contain metadata for all 45,000 movies listed in the Full MovieLens Dataset. The dataset consists of movies released on or before July 2017. 
 Data points include cast, crew, plot keywords, budget, revenue, posters, release dates, languages, production companies, countries, TMDB vote counts and vote averages.
- 
-### Predictive variables
-Each instance in the dataset has several predictor variables (quantitative or categorical), which indicate characteristics of the movie like cast, crew, plot keywords, budget, revenue, posters, release dates, adult, etc.
- 
-### Predictive task
-1. Option 1: To create a model to predict the average vote of the movie i.e., the vote_average variable. 
-2. Option 2: To create a model to predict the revenue of the movie, i.e., the revenue variable. 
-3. Option 3: To create a model to predict the popularity of the movie, i.e., the popularity variable. 
 
-## Dataset description from Kaggle
+## Repository structure
+```
+📦BDA-Project
+ ┣ 📂imgs # Images used in GUI
+ ┣ 📂inps # Dataset used in GUI
+ ┣ 📂models # Models used in GUI
+ ┣ 📂resources # Shap resources used to built executable GUI
+ ┣ 📂uis # GUI by Qt Designer
+ ┃ ┗ 📜plot.ui
+ ┣ 📜data_understanding_and_project_proposal.ipynb
+ ┣ 📜post_analysis_models_implementation_and_evaluation.ipynb
+ ┣ 📜pre_analysis_models_implementation_and_evaluation.ipynb
+ ┣ 📜model_interpretation_and_explanation.ipynb
+ ┣ 📜notebook_for_the_final_exam.ipynb
+ ┣ 📜GUI_plot.py
+ ┣ 📜GUI_plot.spec
+ ┣ 📜GUI_plot.sh
+ ┣ 📜df_test.csv
+ ┣ 📜GUI_plot.exe
+ ┣ 📜README.md
+ ┗ 📜requirements.txt
+```
 
-### Context
-These files contain metadata for all 45,000 movies listed in the Full MovieLens Dataset. The dataset consists of movies released on or before July 2017. Data points include cast, crew, plot keywords, budget, revenue, posters, release dates, languages, production companies, countries, TMDB vote counts and vote averages.
+### Files:
+Below is the list of files along with its purpose.
 
-This dataset also has files containing 26 million ratings from 270,000 users for all 45,000 movies. Ratings are on a scale of 1-5 and have been obtained from the official GroupLens website.
+- [data_understanding_and_project_proposal.ipynb](data_understanding_and_project_proposal.ipynb):
+Data Understanding and Project Proposal
 
-### Content
-This dataset consists of the following files:
+- [post_analysis_models_implementation_and_evaluation.ipynb](post_analysis_models_implementation_and_evaluation.ipynb):
+Post-analysis models implementation and evaluation
 
-**movies_metadata.csv**: The main Movies Metadata file. Contains information on 45,000 movies featured in the Full MovieLens dataset. Features include posters, backdrops, budget, revenue, release dates, languages, production countries and companies.
+- [pre_analysis_models_implementation_and_evaluation.ipynb](pre_analysis_models_implementation_and_evaluation.ipynb):
+Pre-analysis models implementation and evaluation
 
-**keywords.csv**: Contains the movie plot keywords for our MovieLens movies. Available in the form of a stringified JSON Object.
+- [model_interpretation_and_explanation.ipynb](model_interpretation_and_explanation.ipynb):
+Model interpretation and explanation
 
-**credits.csv**: Consists of Cast and Crew Information for all our movies. Available in the form of a stringified JSON Object.
+- [notebook_for_the_final_exam.ipynb](notebook_for_the_final_exam.ipynb):
+Notebook for the final exam
 
-**links.csv**: The file that contains the TMDB and IMDB IDs of all the movies featured in the Full MovieLens dataset.
+- [GUI_plot.py](GUI_plot.py):
+GUI in PyQt5 for final exam
 
-**links_small.csv**: Contains the TMDB and IMDB IDs of a small subset of 9,000 movies of the Full Dataset.
+- [GUI_plot.spec](GUI_plot.spec):
+Spec file to create executable GUI
 
-**ratings_small.csv**: The subset of 100,000 ratings from 700 users on 9,000 movies.
+- [GUI_plot.sh](GUI_plot.sh):
+Script to create executable GUI
 
-The Full MovieLens Dataset consisting of 26 million ratings and 750,000 tag applications from 270,000 users on all the 45,000 movies in this dataset can be accessed here: *https://grouplens.org/datasets/movielens/latest/*
+- [GUI_plot.exe](GUI_plot.exe):
+executable GUI for final exam
 
-### Acknowledgements
-This dataset is an ensemble of data collected from TMDB and GroupLens.
-The Movie Details, Credits and Keywords have been collected from the TMDB Open API. This product uses the TMDb API but is not endorsed or certified by TMDb. Their API also provides access to data on many additional movies, actors and actresses, crew members, and TV shows. You can try it for yourself here: *https://www.themoviedb.org/documentation/api*
+- [plot.ui](uis/plot.ui):
+GUI for final exam by Qt Designer
 
-The Movie Links and Ratings have been obtained from the Official GroupLens website. The files are a part of the dataset available here: *https://grouplens.org/datasets/movielens/latest/*
-
-### Inspiration
-This dataset was assembled as part of my second Capstone Project for Springboard's Data Science Career Track(*https://www.springboard.com/courses/data-science-career-track/*). I wanted to perform an extensive EDA on Movie Data to narrate the history and the story of Cinema and use this metadata in combination with MovieLens ratings to build various types of Recommender Systems.
-
-Both my notebooks are available as kernels with this dataset: The Story of Film(*https://www.kaggle.com/rounakbanik/the-story-of-film*) and Movie Recommender Systems(*https://www.kaggle.com/rounakbanik/movie-recommender-systems*)
-
-Some of the things you can do with this dataset:
-Predicting movie revenue and/or movie success based on a certain metric. What movies tend to get higher vote counts and vote averages on TMDB? Building Content Based and Collaborative Filtering Based Recommendation Engines.
+![home.png](home.png)
+![data.png](data.png)
+![plot.png](plot.png)
